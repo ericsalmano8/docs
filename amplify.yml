@@ -4,6 +4,7 @@ frontend:
     preBuild:
       commands:
         - yarn install
+        - sleep 3600
     build:
       commands:
         - echo "BUILD_ENV=$BUILD_ENV" >> .env.custom
